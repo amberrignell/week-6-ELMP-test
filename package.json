@@ -1,0 +1,24 @@
+{
+  "name": "week-5-elmp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fac20/week-5-ELMP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fac20/week-5-ELMP/issues"
+  },
+  "homepage": "https://github.com/fac20/week-5-ELMP#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2",
+    "tape": "^5.0.1"
+  }
+}
