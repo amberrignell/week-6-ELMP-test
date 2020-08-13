@@ -12,6 +12,8 @@ function router(request, response) {
     handlers.createFortuneHandler(request, response);
   } else if (url === "/all-fortunes") {
     handlers.allFortunesHandler(request, response);
+  } else if (url.includes('public')) {
+    publicHandler(request, response);
   } else {
     handlers.missingHandler(request, response);
   }
