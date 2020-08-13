@@ -2,7 +2,7 @@
 
 # Week 5 project - FAC Fortunes 
 
-This week we used all our database and node wizardry to create a page where FAC20 can get a fortune cookie and submit quotes and wisdom. 
+This week we used all our database and node wizardry to create a page where FAC20 submit their own quotes and wisdom, and receive a cookie containing the wisdom of others! 
 
 ## Schema 
 
