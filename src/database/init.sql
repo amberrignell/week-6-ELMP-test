@@ -36,7 +36,7 @@ INSERT INTO usernames (name) VALUES -- automatically adds serial numbers
 ;
 
 INSERT INTO posts (user_id, text_content) VALUES
-  (1, 'working on weekends at a coffee shop'),
+  (1, 'Before FAC I was working on weekends at a coffee shop'),
   (1, 'I want to be a mermaid!'),
   (1, 'My superpower would be to learn anything through touch'),
   (2, 'I would love to be a great skydiver'),
