@@ -27,4 +27,17 @@
 			aria-label="Home Button"
 		/>
 	</body>
+
+	<script>
+		let buttons = document.querySelectorAll("button");
+
+		buttons[0].addEventListener("click", () => {
+			location.href = "/read-fortune"
+		})
+
+		buttons[1].addEventListener("click", () => {
+			location.href = "/form"
+		})
+	</script>
+
 </html>
