@@ -30,6 +30,19 @@ function formHandler(request, response) {
 	});
 }
 
+function readFortuneHtmlHandler(request, response) {
+	fs.readFile(path.join(__dirname, "..", "public", "readfortune.html"), (error, file) => {
+		if (error) {
+			console.log(error);
+			response.writeHead(404, { "content-type": "text/html" });
+			response.end("<h1>404: Your present is looking unclear</h1>");
+		} else {
+			response.writeHead(200, { "content-type": "text/html" });
+			response.end(file);
+		}
+	});
+}
+
 function missingHandler(request, response) {
 	response.writeHead(404, { "content-type": "text/html" });
 	response.end("<h1>404: your present is looking unclear</h1>");
@@ -86,8 +99,8 @@ function readFortuneHandler(request, response) {
 		.then(randomID => {
 			db.query(`SELECT text_content FROM posts WHERE id = ${randomID}`)
 			.then(message => {
-				response.writeHead(200, { "content-type": "text/html" });
-				response.end(message.rows[0].text_content);
+				response.writeHead(200, { "content-type": "application/json" });
+				response.end(JSON.stringify(message.rows[0].text_content));
 			}
 			)
 			.catch((error) => {
@@ -109,4 +122,5 @@ module.exports = {
 	createFortuneHandler,
 	formHandler,
 	readFortuneHandler,
+	readFortuneHtmlHandler
 };
