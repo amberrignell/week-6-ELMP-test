@@ -8,10 +8,14 @@ function router(request, response) {
     handlers.homeHandler(request, response);
   } else if (url === "/read-fortune") {
     handlers.readFortuneHandler(request, response);
-  } else if (url === "/create-fortune") {
+  } else if (url.includes("/create-fortune")) {
     handlers.createFortuneHandler(request, response);
+  } else if (url === "/form") {
+    handlers.formHandler(request, response);  
   } else if (url === "/all-fortunes") {
     handlers.allFortunesHandler(request, response);
+  } else if (url.includes('public')) {
+    publicHandler(request, response);
   } else {
     handlers.missingHandler(request, response);
   }
