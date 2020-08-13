@@ -10,7 +10,7 @@ fetch("/read-fortune")
   })
   .then(res => res.json())
   .then(data => { 
-        message.innerHTML = data.message;
-        author.innerHTML = data.author;
+        message.innerHTML = data;
+        // author.innerHTML = data.author;
     })
   .catch(err => console.error(err));
