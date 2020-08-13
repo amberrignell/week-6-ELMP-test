@@ -11,7 +11,7 @@
 	<body>
 		<h1>Fortune and Cookies</h1>
 
-		<h3>Click the cookie to read your fortune:</h3>
+		<h2>Click the cookie to read your fortune:</h2>
 
 		<img src="./images/fortune-cookie.png" alt="image of a fortune cookie" />
 
@@ -27,4 +27,17 @@
 			aria-label="Home Button"
 		/>
 	</body>
+
+	<script>
+		let buttons = document.querySelectorAll("button");
+
+		buttons[0].addEventListener("click", () => {
+			location.href = "/read-fortune"
+		})
+
+		buttons[1].addEventListener("click", () => {
+			location.href = "/form"
+		})
+	</script>
+
 </html>
