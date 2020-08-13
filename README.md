@@ -45,10 +45,6 @@ This week we used all our database and node wizardry to create a page where FAC2
 - Stretch goal: As a FAC20 member, I want to search through the wisdom of my cohort for specific people's answers
 
 
-## Our velocity estimates 
-
-- estimated 
-
 ## Acceptance Criteria 
 
 - [X] A form for users to submit data
