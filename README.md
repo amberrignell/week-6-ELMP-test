@@ -1,6 +1,6 @@
 ## Week-5-ELMP
 
-# Week 5 project - FAC Fortunes 
+# Week 5 project - FAC Fortunes and Cookies 
 
 This week we used all our database and node wizardry to create a page where FAC20 submit their own quotes and wisdom, and receive a cookie containing the wisdom of others! 
 
