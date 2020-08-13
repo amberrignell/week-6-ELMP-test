@@ -13,12 +13,12 @@
 
 		<h2>Click the cookie to read your fortune:</h2>
 
-		<img src="/public/images/fortune-cookie.png" alt="image of a fortune cookie" />
+		<img id="img-cookie" src="/public/images/fortune-cookie.png" alt="image of a fortune cookie" />
 
 		<button type="submit">Read my fortune</button>
 		<button type="submit">Add my own saying</button>
 
-		<input
+		<input id="button-home"
 			type="image"
 			src="/public/images/home-icon.png"
 			alt="Home button"
@@ -32,12 +32,21 @@
 		let buttons = document.querySelectorAll("button");
 
 		buttons[0].addEventListener("click", () => {
-			location.href = "/read-fortune"
+			location.href = "/read-fortune-page"
 		})
 
 		buttons[1].addEventListener("click", () => {
 			location.href = "/form"
 		})
+
+		document.querySelector("#button-home").addEventListener("click", () => {
+			location.href = "/"
+		})
+
+		document.querySelector("#img-cookie").addEventListener("click", () => {
+			location.href = "/read-fortune-page"
+		})
+
 	</script>
 
 </html>
