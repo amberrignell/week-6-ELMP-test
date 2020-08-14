@@ -15,7 +15,14 @@ body {
   h2 {
     margin-top: 3vw;
   }
-  
+
+  .message__container {
+    position: absolute;
+    margin-bottom: 23rem;
+    margin-right: 3px;
+    z-index: 1;
+  }
+
   .cookie {
     margin-top: 3vw;
   }
