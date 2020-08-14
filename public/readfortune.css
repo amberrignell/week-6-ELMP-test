@@ -19,23 +19,15 @@ body {
   .message__container {
     position: relative;
     text-align: center;
-    /* position: absolute;
-    margin-bottom: 23rem;
-    margin-right: 3px;
-    z-index: 1; */
   }
 
   .message__text {
     position: absolute;
-    top: 50%;
+    top: 28%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
-  /* .cookie {
-    margin-top: 3vw;
-  } */
-  
   
   .cookie:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */
