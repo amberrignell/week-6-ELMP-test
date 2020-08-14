@@ -1,10 +1,19 @@
-### Week-5-ELMP
+### Week-5-ELMP DATABASE WEEK! 
 
 ---
 
 # FAC Fortunes and Cookies 
 
-This week we used all our database and node wizardry to create a page where FAC20 submit their own quotes and wisdom, and receive a cookie containing the wisdom of others! 
+This week we aimed to learn about databases, specifically SQL, as well as advancing our Node knowledge.
+
+- Designing and documenting a database schema
+- Create a relational database
+- Read and write SQL queries 
+- Avoid SQL injection vulnerabilities
+- Handle node errors 
+- Testing SQL and servers 
+
+We used all this database and node wizardry to create a page where FAC20 submit their own quotes and wisdom, and receive a cookie containing the wisdom of others! 
 
 ## Schema 
 
@@ -19,13 +28,17 @@ This week we used all our database and node wizardry to create a page where FAC2
 
 - Git clone this repo
 - Run `npm install` to set up node modules
-- Initialise a local database
-- Create .env file in project route
+-- enter `psql`
+-- `CREATE USER myuser SUPERUSER PASSWORD 'mypassword';`
+-- `CREATE DATABASE learn_node_postgres WITH OWNER myuser;`
+- Create .env file in project
 - Add `DATABASE_URL` variable in your .env file and assign to initialised database
-- `npm run dev` will start the server 
+- `npm run start` will start the server 
 
-### For our tests: 
-- Run npm install --only=dev
+
+### For the tests -- 
+
+`npm run test` 
 
 
 ## Our team 
