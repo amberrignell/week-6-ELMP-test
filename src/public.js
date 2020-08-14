@@ -17,7 +17,7 @@ function publicHandler(request, response) {
     const extension = urlArray[urlArray.length-1].split('.');
     const type = types[extension[1]];
     const filePath = path.join(__dirname, "..", url); 
-    
+    console.log(filePath)
     fs.readFile(filePath, (error, file) => {
         if (error) {
             console.log(error);
