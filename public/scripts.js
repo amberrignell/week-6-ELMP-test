@@ -10,7 +10,21 @@ fetch("/read-fortune")
   })
   .then(res => res.json())
   .then(data => { 
-        message.innerHTML = data;
+        message.textContent = data;
         // author.innerHTML = data.author;
     })
   .catch(err => console.error(err));
+
+  let buttons = document.querySelectorAll("button");
+
+		buttons[0].addEventListener("click", () => {
+			location.href = "/read-fortune-page"
+		})
+
+		buttons[1].addEventListener("click", () => {
+			location.href = "/form"
+    })
+    
+    document.querySelector("#button-home").addEventListener("click", () => {
+			location.href = "/"
+		})
