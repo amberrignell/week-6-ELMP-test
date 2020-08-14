@@ -1,0 +1,81 @@
+body {
+    font-family: Sniglet;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  h1 {
+    margin-top: 1.2vw;
+  }
+  
+  h2 {
+    margin-top: 3vw;
+  }
+  
+  .cookie {
+    margin-top: 3vw;
+  }
+  
+  
+  .cookie:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
+  button {
+    background: hsl(34, 96%, 62%);
+    box-shadow: 0px 7px 4px hsla(0, 0%, 0%, 0.25);
+    border-radius: 1.5vw;
+    width: 239px;
+    height: 70px;
+    color: black;
+    font-family: Sniglet;
+    font-size: 20px;
+    font-weight: bold;
+    word-spacing: 0.5vw;
+    line-height: 1.8vw;
+    cursor: pointer;
+    margin-top: 3vw;
+  }
+  
+  button:active {
+    box-shadow: 0 5px hsla(0, 0%, 0%, 0.25);
+    transform: translateY(4px);
+  }
+  
+  .home {
+    margin-top: 3.2vw;
+  }
+  
+  .home:active {
+    animation: createBox 0.25s;
+  }
+  @keyframes createBox {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
